@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Windows 95 Comedy Writing App</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="window">
+    <div class="title-bar">
+      <div class="title-bar-text">Comedy Writing App</div>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <button aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="window-body">
+      <div class="flex-container">
+        <!-- Left Sidebar -->
+        <div class="sidebar">
+          <div class="search-container">
+            <input type="text" placeholder="Search comedy tools" class="search-input">
+          </div>
+          <div class="preferences-list" id="preferencesList"></div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+          <div id="component-content"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Place the script tag at the end of the body -->
+  <script src="script.js"></script>
+</body>
+
+</html>

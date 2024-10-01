@@ -1,0 +1,523 @@
+/* Modern CSS for Comedy App */
+
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --background-color: #f5f7fa;
+  --text-color: #34495e;
+  --border-color: #e0e6ed;
+  --card-background: #ffffff;
+  --hover-color: #2980b9;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.window {
+  background: var(--card-background);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 95%;
+  max-width: 1400px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  margin: 2vh auto;
+  overflow: hidden;
+}
+
+.title-bar {
+  background: var(--primary-color);
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px 8px 0 0;
+}
+
+.title-bar-text {
+  font-weight: 600;
+  color: white;
+  font-size: 18px;
+}
+
+.title-bar-controls button {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.title-bar-controls button:hover {
+  transform: scale(1.1);
+}
+
+.window-body {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.flex-container {
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.sidebar {
+  display: block; /* or flex, depending on your layout */
+  width: 250px;
+  min-width: 250px;
+  background-color: var(--card-background);
+  border-right: 1px solid var(--border-color);
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.search-container {
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.preferences-list > div {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.preferences-list > div:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.main-content {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 20px;
+  background-color: var(--background-color);
+}
+
+.content-header {
+  position: sticky;
+  top: 0;
+  background-color: var(--background-color);
+  z-index: 1;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.icon {
+  font-size: 32px;
+  margin-right: 16px;
+  color: var(--primary-color);
+}
+
+.header-text h2 {
+  margin: 0;
+  font-size: 24px;
+  color: var(--text-color);
+}
+
+.header-text p {
+  margin: 8px 0 0;
+  color: #7f8c8d;
+}
+
+.settings-list > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--border-color);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.settings-list > div:hover {
+  background-color: #f8f9fa;
+}
+
+input,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--hover-color);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Component Styling */
+.joke-types-list,
+.wordplay-generator,
+.timing-techniques,
+.character-development,
+.cultural-references,
+.comedy-theory,
+.standup-structures,
+.sketch-writing,
+.observational-humor,
+.meme-creation,
+.joke-analysis,
+.comedy-exercises,
+.improv-techniques,
+.audience-targeting,
+.joke-revision,
+.comedy-trends,
+.persona-building,
+.visual-humor,
+.delivery-styles,
+.joke-structure {
+  background-color: var(--card-background);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.joke-types-list h3,
+.wordplay-generator h3,
+.timing-techniques h3,
+.character-development h3,
+.cultural-references h3,
+.comedy-theory h3,
+.standup-structures h3,
+.sketch-writing h3,
+.observational-humor h3,
+.meme-creation h3,
+.joke-analysis h3,
+.comedy-exercises h3,
+.improv-techniques h3,
+.audience-targeting h3,
+.joke-revision h3,
+.comedy-trends h3,
+.persona-building h3,
+.visual-humor h3,
+.delivery-styles h3,
+.joke-structure h3 {
+  color: var(--primary-color);
+  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.joke-type {
+  background-color: #f8f9fa;
+  border: 1px solid var(--border-color);
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  transition: box-shadow 0.2s ease;
+}
+
+.joke-type:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.joke-type h3 {
+  margin-top: 0;
+  font-size: 18px;
+  color: var(--primary-color);
+}
+
+.joke-type h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+.joke-type ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.joke-type p {
+  margin-bottom: 10px;
+}
+
+/* Result containers */
+#wordplayResult,
+#timingResult,
+#characterAnalysis,
+#generatedReference,
+#referenceExplanation,
+#comedyAnalysis,
+#organizedSet,
+#sketchIdea,
+#observationResult,
+#memeResult,
+#jokeAnalysisResult,
+#generatedExercises,
+#scenarioResult,
+#targetingSuggestions,
+#jokeRevision,
+#trendAnalysis,
+#trendForecast,
+#personaResult,
+#visualHumorResult,
+#deliverySuggestion,
+#structuredJokeResult {
+  background-color: #f8f9fa;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .window {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    min-width: unset;
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .main-content {
+    padding: 15px;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.joke-type,
+.settings-list > div,
+button {
+  animation: fadeIn 0.3s ease;
+}
+
+/* Typography improvements */
+body, input, button, textarea {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+/* Additional modern touches */
+.card {
+  background-color: var(--card-background);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+}
+
+.btn-secondary:hover {
+  background-color: #27ae60;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #e0e6ed;
+  color: var(--text-color);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background-color: #e0e6ed;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+/* Tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Focus styles for accessibility */
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5);
+}
+
+/* Dark mode (optional) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --background-color: #1a1a1a;
+    --text-color: #f5f5f5;
+    --border-color: #2c2c2c;
+    --card-background: #2c2c2c;
+    --hover-color: #2980b9;
+  }
+
+  .joke-type,
+  #wordplayResult,
+  #timingResult,
+  #characterAnalysis,
+  #generatedReference,
+  #referenceExplanation,
+  #comedyAnalysis,
+  #organizedSet,
+  #sketchIdea,
+  #observationResult,
+  #memeResult,
+  #jokeAnalysisResult,
+  #generatedExercises,
+  #scenarioResult,
+  #targetingSuggestions,
+  #jokeRevision,
+  #trendAnalysis,
+  #trendForecast,
+  #personaResult,
+  #visualHumorResult,
+  #deliverySuggestion,
+  #structuredJokeResult {
+    background-color: #333;
+  }
+
+  .settings-list > div:hover {
+    background-color: #3a3a3a;
+  }
+
+  .tag {
+    background-color: #3a3a3a;
+    color: #f5f5f5;
+  }
+
+  .progress-bar {
+    background-color: #3a3a3a;
+  }
+
+  /* Adjust scrollbar colors for dark mode */
+  ::-webkit-scrollbar-track {
+    background: #2c2c2c;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
