@@ -31,11 +31,11 @@ The Comedy Writing Assistant is an AI-powered web application designed to help a
 ## Installation
 1. Clone the repository
    ```
-   git clone https://github.com/yourusername/comedy-writing-assistant.git
+   git clone https://github.com/lalomorales22/the-final-joke-app.git
    ```
 2. Navigate to the project directory
    ```
-   cd comedy-writing-assistant
+   cd the-final-joke-app
    ```
 3. Install dependencies
    ```
@@ -60,4 +60,4 @@ The Comedy Writing Assistant is an AI-powered web application designed to help a
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
-This project is licensed under the MIT License.
+Using Groq and Meta's Llama3.2 open source software
