@@ -1,4 +1,7 @@
-# Comedy Writing Assistant
+# The Final Joke App
+![banner](https://github.com/user-attachments/assets/c735d2e7-fa8b-4b5d-b90d-aaf9e2c7a8a6)
+
+
 
 ## Description
 The Comedy Writing Assistant is an AI-powered web application designed to help aspiring comedians and writers improve their comedy skills. It offers a wide range of tools and features to assist with various aspects of comedy writing, from joke analysis to meme generation.
